@@ -64,13 +64,13 @@ def get_alarm(*args):
 
 root = Tk()
 root.attributes("-fullscreen", True)
-root.configure(background='Green')
+root.configure(background='Blue')
 root.bind("x", quit)
 root.bind("a",get_alarm)
 root.after(1000, show_time)
 fnt = font.Font(family='Helvetica', size=60, weight='bold')
 txt = StringVar()
-lbl = ttk.Label(root, textvariable=txt, font=fnt, foreground='Yellow', background='red')
+lbl = ttk.Label(root, textvariable=txt, font=fnt, foreground='Blue', background='white')
 lbl.place(relx=0.5, rely=0.5, anchor=CENTER)
 root.mainloop()
 
