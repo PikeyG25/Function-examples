@@ -16,7 +16,18 @@ def test_avg():
 
     number=test1+test2+test3+test4+test5+test6+test7+test8+test9+test10
     test_avg = number/10
+    if test_avg >=90:
+        print("you have an A")
+    elif test_avg >=80:
+        print("You have a B")
+    elif test_avg >=70:
+        print("You have a C")
+    elif test_avg >=60:
+        print("You have a D")
+    elif test_avg <=60:
+        print("You have an F")
     return test_avg
 
+
 avg=test_avg()
-print(avg)
+print("Your average test score is ",avg)
