@@ -1,6 +1,9 @@
 attempts = 0
+
 print("Python terms")
+
 puzzle = "fjvfloatdyyopzedninsmspfycnnalxeaeeukgeislufryprlcabeeiagcoibuclqttbongojlivxobgadmyahgerjstringwvrs"
+
 def display_puzzle():
     print(puzzle[0:10])
     print(puzzle[10:20])
@@ -100,6 +103,25 @@ while x==0:
     else:
         print("that's not right try again.")
 
-
+display_puzzle()
+x=0
+while x==0:
+    word4= input("Enter the index positions of boolean")
+    attempts+=1
+    i=0
+    foundword=""
+    while i < word2_length*2:
+        index3=word4[i]
+        index4=word4[i+1]
+        index=int(index)
+        index=index1+index2+index3
+        foundword =foundword+puzzle[index]
+        i+=3
+    if foundword == "if":
+        print(foundword)
+        print("Great Job")
+        x=1
+    else:
+        print("that's not right try again.")
 
 
