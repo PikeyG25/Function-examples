@@ -25,7 +25,7 @@ def getGrade(gradelist):
             print("That's not a good grade")
 
 def avgfunction(gradelist):
-    total = gradelist.sum() 
+    total = sum(gradelist) 
     
     avg = total / len(gradelist)
     return avg
@@ -33,8 +33,10 @@ def main(gradelist):
 
     getGrade(gradelist)
     avg = avgfunction(gradelist)
-    xmax = gradelist.max()
-    xmin = gradelist.min()
+    xmax = max(gradelist)
+    xmin = min(gradelist)
+    sort(gradelist)
+    print(gradelist)
     print(xmax)
     print(xmin)
     print("Your grade is",avg)
