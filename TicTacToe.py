@@ -188,8 +188,8 @@ def main(board):
     display_board(board)
     while not winner(board):
         if turn == human:
-            human_move()
-            display_board()
+            human_move(board)
+            display_board(board)
             next_turn()
         elif turn == computer:
             computer_move(board, computer, human)
