@@ -16,9 +16,25 @@ def display_instructions():
     Once you find out who is going first, you need to find out who is X's and who is O's.
     A board will display and there will be nine spaces available to go in, you then
     place a piece down strategically, then the other person goes. You keep going till
-    you get three pieces in a row or you and the other person tie"""
+    you get three pieces in a row or you and the other person tie.
+
+    You will need to make your move by entering in number 0-8.
+
+                                0 | 1 | 2
+                                --------
+                                3 | 4 | 5
+                                --------
+                                6 | 7 | 8
+
+
+
+
+
+
+
+    """
             )
-display_instructions()
+
 ##############################################################################
 def ask_yes_no(question):
     response = None
@@ -75,8 +91,7 @@ def display_board(board):
         print("\t","---------")
         print("\n\t", board[6],"|",board[7],"|", board[8])
 
-board = [X,EMPTY,EMPTY,EMPTY,X,EMPTY,EMPTY,EMPTY,X]
-display_board(board)
+
 ##############################################################################
 def legal_moves(board):
         """Create list of legal moves"""
@@ -188,12 +203,13 @@ def main(board):
     display_board(board)
     while not winner(board):
         if turn == human:
-            human_move()
-            display_board()
+            human_move(board)
+            display_board(board)
             next_turn()
         elif turn == computer:
             computer_move(board, computer, human)
             display_board(board)
+            next_turn()
         else:
             the_winner()
             congrat_winner(winner, human, computer)
