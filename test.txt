@@ -1,17 +1,81 @@
-title
+Python test
 category
-question
-answer1
-answer2
-answer3
-answer4
-correct
-explanation
-category
-question
-answer1
-answer2
-answer3
-answer4
-correct
-explanation.
+Question: What is Python?
+A high level general purpose programming language
+A cool snake
+A character in Greek mythology
+Microsoft
+1. A high level general purpose programming language
+This is a computer programming class. The other answers don't make sense.
+Category: What is?
+What is a string?
+Something spiders make. 
+A long piece of twisted thread. 
+A statement that stores characters inside quotation marks. 
+Yarn.
+3. A statement that stores characters inside quotation marks. 
+Explanation: Again, this is a programming class. 
+True or False
+An if statement displays the output of the program. 
+True
+False
+N/A
+N/A
+2. False
+A print statement displays the output of the program
+True or False
+A variable must be assigned before it can be used. 
+False
+True
+N/A
+N/A
+2. True
+The variable HAS to be assigned before it can be used. 
+Output
+What is the output of the following code print(9\2)
+4.5
+9
+error
+3
+1. 4.5
+9/2 equals 4.5
+Symbol
+What symbol can be used to comment out one line of code?
+!
+*
+//
+#
+4. #
+The '#' symbol comments out lines of code.
+What phrase
+What keyword would you use to add an alternative condition to an if statement?
+else if
+elseif
+elif
+None of the above
+3. elif
+elif adds a second option to an if statement.
+List
+Which of the following is a valid list in Python?
+List = {1,2,3,4,5}
+List = (1,2,3,4,5)
+List = \1,2,3,4,5\
+List = [1,2,3,4,5]
+4. List = [1,2,3,4,5]
+The list has to be enclosed in square brackets. 
+List
+How would you print the second item in the list variable "example"?
+print(example[2])
+echo(example[2])
+print(example[1])
+print(example(2))
+3. print(example[1])
+The second placement is the index '1'.
+File
+What is the proper way to open a file that you intend to read from?
+f = open(“test.txt”, “read”)
+f = open(“test.txt”, “r”)
+f = open(“r”,”test.txt”)
+f = open(“read”,”test.txt”)
+2. f = open(“test.txt”, “r”)
+You open a read file with 'r'.

@@ -25,6 +25,7 @@ def next_block(the_file):
     
     answers = []
     for i in range(4):
+
         answer = next_line(the_file)
         answers.append(answer)
     correct = next_line(the_file)

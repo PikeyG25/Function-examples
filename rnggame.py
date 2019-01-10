@@ -154,8 +154,4 @@ def options():
 def quit1():
     print("\nyou have quit the game.")
     quit
-
-
-
-
 menu()
