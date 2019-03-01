@@ -1,7 +1,7 @@
 # Chutes and ladders
 # Parker Gowans
 # 1/19
-
+#Does not display board/Broke on name call up
 #Imports
 ########################################################################################################
 import random
@@ -223,18 +223,36 @@ class Space(object):
 #Functions
 ########################################################################################################
 
-def ask_num():
-    pass
-def switch_turn():
-    pass
+def ask_num(question,low,high):
+
+    while True:
+        num = input(question)
+        try:
+            num = int(num)
+            if num in range (low,high+1):
+                return num
+            else:
+                print("You must choose a number between ",low,"and",high)
+        except:
+            print("That was not a number")
+
+def switch_turn(num_players, turn):
+    turn = turn
+    if turn<num_players-1:
+        turn+=1
+        return turn
+    else:
+        turn = 0
+        return turn
 def winner_grats():
-    pass
+    print("We have a winner")
+
 
 #Main
 ########################################################################################################
 
 def main():
-    num_players = 4#ask_num("How many players will be playing",2,4)
+    num_players = ask_num("How many players will be playing",2,4)
     players = []
     turn = 0
     winner = None
@@ -256,8 +274,9 @@ def main():
         space.move_player(players[turn],board)
         winner = players[turn].win()
         if not winner:
-             turn = turn + 1#switch_turn(num_players, turn)
-
+             turn = switch_turn(num_players,turn)
+    ask_num()
+    switch_turn(num_players, turn)
     winner_grats()
     print(winner)
     input("Press enter to quit")
