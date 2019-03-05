@@ -16,7 +16,7 @@ app = Frame(root)
 app.grid()
 
 #Create a label inside the frame
-label = Label(app,text = "this is a fancy Label", fg= "red", font = ("Times New Roman","70"))
+label = Label(app,text = "this is a fancy Label", fg= "red", font = ("Kruffy","70"))
 lbl = Label(app, text = "I'm a label!")
 lbl3 = Label(app, text = "This is another label")
 label.grid()
