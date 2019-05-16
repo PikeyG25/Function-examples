@@ -10,8 +10,7 @@ class Application(Frame):
         self.create_widget()
     def create_widget(self):
         """ Create button which displays number of clicks. """
-        self.lbl = Label(text = "Counter program")
-        self.lbl.grid()
+        self.lbl = Label(text = "Calculator program").grid(row = 0, column = 1)
         self.lbl2 = Label(text = str(self.clicks))
         self.lbl2.grid()
         self.bttn = Button(self)
@@ -40,7 +39,7 @@ class Application(Frame):
 
 root = Tk()
 root.title("")
-root.geometry("1920x1080")
+root.geometry("300x150")
 app = Application(root)
 
 root.mainloop()

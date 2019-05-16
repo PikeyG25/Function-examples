@@ -13,6 +13,8 @@ def main():
     if num == "4":
         print("You will get polio.")
     if num == "5":
-        print("You will ace a test.")
+        print("Elon Musk buys you a Tesla")
+    else:
+        main()
 
 main()
